@@ -22,9 +22,11 @@ I have been playing with [Web RTC](https://webrtc.org/) in the last couple of mo
 
 As a part of my research, I have developed this project called **Black Door Chat**.
 
-Do you wanna see that in action, check the [video](https://github.com/cristianmercado19/black-door-chat/media/BlackDoorChat.webm):
+## Video demo
 
-### 123 steps for lazy readers
+Do you wanna see that in action, check the [video](https://github.com/cristianmercado19/black-door-chat/blob/master/media/BlackDoorChat.webm?raw=true):
+
+## Run now
 
 1. Clone repository `https://github.com/cristianmercado19/black-door-chat-angular-view.git`
 2. `yarn install`
@@ -47,7 +49,7 @@ Signaling is the process of coordinating communication. In order for a WebRTC ap
 * Key data, used to establish secure connections.
 * Network data, such as a host's IP address and port as seen by the outside world.
 
-To avoid redundancy and to maximize compatibility with established technologies, signaling methods and protocols are not specified by WebRTC standards. This approach is outlined by `JSEP`, the JavaScript Session Establishment Protocol
+To avoid redundancy and to maximize compatibility with established technologies, signaling methods and protocols are not specified by WebRTC standards. This approach is outlined by `JSEP`, the JavaScript Session Establishment Protocol.
 
 JSEP requires the exchange between peers of offer and answer: the media metadata mentioned above. Offers and answers are communicated in Session Description Protocol format (SDP), which look like this:
 
