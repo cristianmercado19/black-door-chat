@@ -123,7 +123,7 @@ As an example, one of the most complex views:
 
 `black-door-chat-mvc\lib\room\view\room.view.interface.ts`
 
-```js
+```typescript
 export interface RoomView {
   showGoHomeAction(): void;
   hideLeaveTheRoomAction(): void;
