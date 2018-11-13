@@ -24,7 +24,8 @@ As a part of my research, I have developed this project called **Black Door Chat
 
 ## Video demo
 
-Do you wanna see that in action, check the [video](https://github.com/cristianmercado19/black-door-chat/blob/master/media/BlackDoorChat.webm?raw=true):
+Do you wanna see that in action, check the [video](https://github.com/cristianmercado19/black-door-chat/blob/master/media/BlackDoorChat.webm?raw=true):</br>
+https://github.com/cristianmercado19/black-door-chat/blob/master/media/BlackDoorChat.webm?raw=true
 
 ## Run now
 
