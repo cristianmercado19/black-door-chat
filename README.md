@@ -2,7 +2,7 @@
 
 ## A Real p2p and server-less chat
 
-I have develop a JS chat with some interesting features:
+I have developed a **JS chat** with some interesting features:
 
 * Serverless - No intermediary server required
 * Decentralized
@@ -37,7 +37,7 @@ Do you wanna see that in action, check the [video](https://github.com/cristianme
 
 ### Connecting two remote browsers
 
-When two devices want to speak to each other, we need a way for them to exchange contact information such as their IP addresses. In the same way DNS servers help browsers locate remote machines, we can set up a mutually known server to help potential peers locate each other. In WebRTC this is known as a signalling server.
+When two devices want to speak to each other, we need a way for them to exchange contact information such as their IP addresses. In the same way DNS servers help browsers locate remote machines, we can set up a mutually known server to help potential peers locate each other. In WebRTC this is known as a *signalling server*.
 
 ### Signaling
 
@@ -105,21 +105,21 @@ I have created three different projects:
 * [Service](https://github.com/cristianmercado19/black-door-chat-service)
 * [View](https://github.com/cristianmercado19/black-door-chat-angular-view)
 
-The key goal here is give you the possibility to implement your **own view**.
-To do that, I have implemented the *MVC pattern*. I isolated the logic of the UI in a *Controller* which lives in the [MVC project](https://github.com/cristianmercado19/black-door-chat-mvc) while the View in a separated repository. Because of that, the view implements an interfaces defined by the *controller*.
+The key goal: You can easily implement your **own chat view**.
+In order to do that, I have based my development in the clasic *MVC pattern*. I have isolated the logic of the UI in *Controllers* which live in the [MVC project](https://github.com/cristianmercado19/black-door-chat-mvc) while the *Views* are in separated repository. Actually the views implement interfaces defined by the *controller*.
 
 You will be able to take [Angular view](https://github.com/cristianmercado19/black-door-chat-angular-view) as an end to end UI implementation.
 
 ### [MVC - Model View Controller](https://github.com/cristianmercado19/black-door-chat-mvc)
 
 I mainly concentrated all my effort and my focus on this project to start the development.
-I have driven it using *Behavior-Driven-Development* (BDD) technique. Following that, is much easier to understand the requirements due to the fact that they are expressed throw tests (Given-When-Then).
+I have driven it using *Behavior-Driven-Development* (BDD) technique. Without any doubt, it is **much easier to understand** the requirements with this strategy due to the fact that they are expressed in terms of **Given-When-Then tests**.
 
-I have allocated all the logic in the **controller**, which is the main orchestrator between the *View* and the *Service*. My approach is based in [Passive View pattern](https://martinfowler.com/eaaDev/PassiveScreen.html). If you want to see that in more details: https://martinfowler.com/eaaDev/PassiveScreen.html
+I have allocated all the logic in the **controller**, which is the **main orchestrator** between the *View* and the *Service*. My approach is based in [Passive View pattern by Martin Fowler](https://martinfowler.com/eaaDev/PassiveScreen.html). If you want to see that in more details: https://martinfowler.com/eaaDev/PassiveScreen.html
 
 Finally, you will find **the View is really light**. Actually it is a simple implementation of the interfaces required by the controllers.
 
-As an example:
+As an example, one of the most complex views:
 
 `black-door-chat-mvc\lib\room\view\room.view.interface.ts`
 
@@ -145,7 +145,7 @@ export interface RoomView {
 }
 ```
 
-More details: https://github.com/cristianmercado19/black-door-chat-mvc
+Continue reading about *MVC* repository: https://github.com/cristianmercado19/black-door-chat-mvc
 
 ### [Service](https://github.com/cristianmercado19/black-door-chat-service)
 
@@ -153,7 +153,7 @@ The *Service project* is the implementation of the service's interfaces required
 
 Most of the required services have been implemented by a single class called **ChatService**. However, it is not a rigid approach. The only reason, why I have implemented all of the interfaces in one class is to simplify the *Dependency Injection* (DI).
 
-More details: https://github.com/cristianmercado19/black-door-chat-service
+Continue reading about *Service* repository: https://github.com/cristianmercado19/black-door-chat-service
 
 ### [Angular View](https://github.com/cristianmercado19/black-door-chat-angular-view)
 
@@ -177,4 +177,4 @@ addNewMessage(message: string): void {
 
 On the other hand, I have introduced some *factories* to manage the DI pattern in the modules. It is not a big deal, you could find other approaches (probably better than this).
 
-More details: https://github.com/cristianmercado19/black-door-chat-angular-view
+Continue reading about *Angular View* repository: https://github.com/cristianmercado19/black-door-chat-angular-view
