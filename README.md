@@ -22,6 +22,10 @@ I have been playing with [Web RTC](https://webrtc.org/) in the last couple of mo
 
 As a part of my research, I have developed this project called **Black Door Chat**.
 
+## Hosted Client
+
+Although no host is required, you could access the angular-client-version in: [http://black-door-chat.smart-bricks.net](http://black-door-chat.smart-bricks.net).
+
 ## Video demo
 
 Do you wanna see that in action, check the [video](https://github.com/cristianmercado19/black-door-chat/blob/master/media/BlackDoorChat.webm?raw=true):</br>
